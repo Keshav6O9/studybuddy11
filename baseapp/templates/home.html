@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome to Study Buddy </title>
+   <!-- BOOTSTRAP 5 CDN -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- ICONS CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
+   <!--EXTERNAL CSS  -->
+   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <link rel="stylesheet" href="home.css">
+
+</head>
+
+
+<body >
+    <!-- navbar -->
+
+    <div class="container-fluid ">
+        <div class="row ">
+          <div class="col-sm">
+      
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top" style="color: teal;">
+              <div class="container-fluid">
+                     <a class="navbar-brand me-5 fw-bold fs-3 h-font" href=""> Study Buddy</a>
+                     <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+   
+                              <!-- <li class="nav-item">
+                                <a class="btn btn-outline-dark shadow-none me-lg-2 me-3" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Add a Friend
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="btn btn-primary " href="#" type="button" data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" id="sidebarCollapse">
+                                  Friends
+                              </a>
+                          </li> -->
+                               <li class="nav-item">
+                                 <a class="nav-link active  me-2" href="#">About</a>
+                               </li>
+                               <li class="nav-item">
+                                <a class="nav-link active  me-2" href="#">Support</a>
+                              </li>
+                         </ul>
+                      <div class="d-flex"> 
+                             <button type="button" class="btn btn-outline-dark shadow-none me-lg-2 me-3" data-bs-toggle="modal" data-bs-target="#loginModal">
+                             Login
+                             </button> <!--
+                             <button type="button" class="btn btn-outline-dark shadow-none me-lg-2 me-3" data-bs-toggle="modal" data-bs-target="#registerModal">
+                             Register
+                             </button>
+                        
+                       </div> -->
+             </div>
+            </nav>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- bacdrop of login + register -->
+<div class="modal-dialog modal-lg">
+    <div class="modal fade " id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title d-flex align-items-center" id="staticBackdropLabel">
+              <i class="fa-solid fa-user-vneck"></i> Login</h5>
+            <button type="reset" class="btn-close shadow-none " data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+  
+          <div class="modal-body">
+            <div class="row">
+  
+              <div class=" col-sm w-50>	
+                        <p class="h4" align="justify">Hey Buddy,<br/>Welcome to Study Buddy</p>
+                          If you don't already have an account 
+                          with us at a <b>Study Buddy</b>
+                          please use the "<b>Register Now</b>"
+                          button to find your best study partners. <br><br> 
+
+
+
+
+                          <!-- HERE IT GOES TO THE REGISTRATION FORM -->
+      <a href="registration.html" class="btn btn btn-dark d-grid gap-2 col-6 mx-auto"  type="button" align="center">Register</a>
+
+                </div>  
+                
+                  <!-- login form -->
+               
+                  <div class="col-sm-6 w-50">
+                        <label  class="form-label">Email address</label>
+                        <input type="email" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        
+                        <label  class="form-label">Password</label>
+                        <input type="email" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <br>
+
+<!-- THE MAIN SETTINGS ARE HERE THE BELOW HHREF -->
+
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                        <a href="index.html" class="btn btn btn-dark col-6 mx-auto"  type="button" align="center">Login</a>
+      <!-- <button class="btn btn-dark shadow-none mt-3 h-25">Login</button> -->
+
+<!-- THE MAIN SETTINGS ARE HERE THE BELOW HHREF -->
+
+                        <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forgot Password</a>
+                      </div>
+                    
+                  </div>
+            
+            </div>
+                
+        </div>
+        
+      </div>
+     </div> 
+     
+</div>
+</div>
+
+     <!-- INTRODUCTION STARTS -->
+
+<div class="container ">
+    <div class="row">
+        <!-- text -->
+        <div class="col-sm-6 col-md-6 col-lg-6 ">
+            <p class="h2 text-center mt-4"> Get matched with <br>your nearby  <span style="color: teal;">Study Partner</span>!!
+                <br>
+
+                <p class="h6 m-4 text1" align="justify">
+                    Looking for someone with
+                    same career path? For
+                    someone with you can study;
+                    brain storm and talk?
+                    Join  Study Buddy  to 
+                    grow and get fluked meeting
+                    new people.
+                </p>
+      <a href="registration.html" class="btn btn btn-outline-dark d-grid gap-2 col-6 mx-auto"  type="button" align="center">Let's Begin</a>
+        
+              </div>
+        <!-- image -->
+        <div class="col-sm-6 col-md-6 col-lg-6 ">
+             <img src="./assets/headin.png" alt=" buddies studying" class="img-fluid d-block h-75 w-75">
+        </div>
+    </div>
+ </div>
+ <!-- INTRODUCTION ENDS -->
+<br><br><br><br>
+ <!-- HOW IT WORKS STARTS -->
+  <div class="container ">
+    <div class="row">
+          <!-- first step -->
+     
+          <p class="h2 text-left"> How it helps you</p>
+          <div class="col-sm-4 col-md-6 col-lg-4 ">
+            <i class="fas fa-child fa-3x mt-5 mb-4 mx-5 mr-5 icon" align="center"></i>
+            <p class="h4">Make your profile</p>
+            <p>Tell us about you; your preferences.. about your preparations;  your mode of study and other requirments.  </p>
+          </div>
+          <div class="col-sm-4 col-md-6 col-lg-4">
+            <i class="fas fa-user-friends fa-2x mt-5 mb-4 mx-5 mr-5 icon1 " align="center"></i>
+            <p class="h4">Find your bond</p>
+            <p class="text2">Search your real friends and make a new virtual in city and distanced <span style="color: teal;">  Study Buddy</span> with your serendipity.  </p>
+    <!-- <i class="fa-solid fa-users-viewfinder"></i> -->
+          </div>
+          <div class="col-sm-4 col-md-6 col-lg-4">
+            <i class="fas fa-comment fa-2x mt-5 mb-4 mx-5 mr-5 icon2 " align="center"></i>
+            <p class="h4">Say Hi Buddy!!</p>
+            <p class="text2">   Now all you have to do is to say this "Just wanted to say hi and ask about what you’re up to these days"  </p>
+    
+          </div>
+      </div>
+  </div>
+<br><br><br>
+
+ <!-- HOW IT WORKS ENDS -->
+ <hr>
+   <!-- <i class="fa-solid fa-users-viewfinder"></i> -->
+
+
+
+<!-- WHAT WE DO -->
+
+<!-- ADD A SECCTION WITH THE LOGO OF THE TOP EXAM HOSTING ORGANISATION AND WRITING ABOUT THAT THIS SITE HELPS THE STUDENTS
+ WHO ARE SELF STUDYING OR BY A COACHING 
+--> 
+
+
+
+
+
+ <!-- WHY BUDDY FINDER -->
+<br><br><br>
+ <div class="container">
+  <div class="row">
+   
+        <p class="h2 text-left"> Why Study Buddy</p>
+        <div class="col-sm-4 col-md-6 col-lg-4 ">
+          <i class="fas fa-user-alt fa-2x mt-5 mb-4 mx-5 mr-5 icon3" align="center"></i>
+          <p class="h4">Training & Improvement</p>
+          <p class="text2">Playing with different adversaries will challenge you to adapt and learn new strengths  </p>
+        </div>
+        <div class="col-sm-4 col-md-6 col-lg-4  ">
+          <i class="fas fa-user-friends fa-2x mt-5 mb-4 mx-5 mr-5 icon4 " align="center"></i>
+          <p class="h4">Make new friends</p>
+          <p class="text2">If knowledge can bring the entire world closer together, it can surely do the same for you and your new acquaintance </p>
+
+        </div>
+        <div class="col-sm-4 col-md-6 col-lg-4 ">
+          <i class="fas fa-check-square fa-2x mt-5 mb-4 mx-5 mr-5 icon3 " align="center"></i>
+          <p class="h4">Improvised Calibre</p>
+          <p class="text2">  Study Buddy's granular skill level system will likely lead to higher quality education and excellence  </p>
+  
+        </div>
+
+    </div>
+    <br><br>
+    <div class="row">
+      <!-- <button  href="registraion.html">Let's Begin</button> -->
+      <a href="registration.html" class="btn btn btn-outline-dark d-grid gap-2 col-6 mx-auto" type="button" align="center">Let's Begin</a>
+    </div>
+</div>
+<br><br><br><br>
+
+ <!-- WHY BUDDY FINDER -->
+</body>
+
+ <!-- <footer class="footer">
+  <div class="container ">
+
+    <div class="row">
+
+      <div class="col-sm-6 col-md-6 col-lg-6 m-2">
+        <p class="h5"> <b>Study Buddy</b></p>
+        <p class="h6 text-secondary"> Built by Keshav,Mradhula,Narsi and Sakshi.</p>
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-6  m-2">
+        <p class="h5"><b>Contact</b></p>
+        <p class="h6 text-secondary">We could do better? Email us your feedback! </p>
+      </div>
+      
+    </div>
+</div>
+    </div>
+  </div>
+</footer> --> 
+
+</html>

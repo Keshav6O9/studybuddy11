@@ -1,0 +1,104 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.h-font
+{
+    font-family: 'Merienda', 'cursive';
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  .custom-bg{
+    background-color: #2ec12e2e
+  }
+  .custom-bg :hover{
+    background-color: #279e8c
+  }
+  .text1{word-spacing: 5px; line-height: 25px;}
+
+
+  /* for  HOW IT HELPS YOU ICONS*/
+  .icon{
+    background: teal;
+    padding:20px;
+    border-radius: 100%;
+    width: 80 px;
+    height: 80px;
+    margin: 20px;
+    color: white;
+
+  }
+  .icon1{
+    background: teal;
+    padding:20px;
+    border-radius: 100%;
+    width: 80 px;
+    height: 80px;
+    margin: 20px;
+    color: white;
+  }
+  .icon2{
+    background: teal;
+    padding:20px;
+    border-radius: 100%;
+    width: 80 px;
+    height: 70px;
+    margin: 20px;
+    color: white;
+  }
+  /* for  HOW IT HELPS YOU ICONS*/
+
+
+
+  /* for WHY STUDY BUDDY  ICONS*/
+
+  .icon3{
+    background: teal;
+    padding:20px;
+    border-radius: 100%;
+    width: 85 px;
+    height: 70px;
+    margin: 20px;
+    color: white;
+  }
+  .icon4{
+    background: teal;
+    padding:20px;
+    border-radius: 100%;
+    width: 90 px;
+    height: 75px;
+    margin: 20px;
+    color: white;
+  }
+  /* for WHY STUDDY BUDDY ICONS */
+  .text2{word-spacing: 7px; line-height: 25px;}
+
+
+  /* inde.html stlyes */
+  #list > li > a{
+    margin-right: 15px;
+}
+
+#wrapper{
+    display: flex;
+    width: 100%;
+}
+#offcanvasScrolling{
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}

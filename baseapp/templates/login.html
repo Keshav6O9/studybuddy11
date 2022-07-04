@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+      <div class="col-sm-6 w-50">
+        <form action = "{% url 'login' %}" role="form" method="post">
+            {% csrf_token %}
+            <label  class="form-label">Email address</label>
+            <input type="text" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp" name='username'>
+            
+            <label  class="form-label">Password</label>
+            <input type="password" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp" name='password'>
+            <br>
+
+
+
+            <div class="d-flex align-items-center justify-content-between mb-2">
+                <button type="submit" class="btn btn-success btn-lg ms-2">Submit form</button>
+            </div>
+        </form>
+      </div>
+
+    </body>
+</html>
